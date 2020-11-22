@@ -7,12 +7,12 @@
 # Current state of development:
 Our goal is to detect efficiently non-infected, bacterial infected or COVID-19 infected lungs on chest xrays. We decided to use transfer learning to reach our goal.
   
-## We are working with 3 labels:
+We are working with 3 labels:
 * no_findings: no detected infection
 * covid_19: infected with COVID-19
 * pneumonia: bacterial infection
     
-## Datasets used for learning and evaluation:
+Datasets used for learning and evaluation:
 * train
   * covid_19(370)
   * no_findings(449)
@@ -22,7 +22,7 @@ Our goal is to detect efficiently non-infected, bacterial infected or COVID-19 i
   * no_findings(50)
   * pneumonia(50)
 
-## So far we used transfer learning on the following models:  
+So far we used transfer learning on the following models:  
 | Model  | Branch | File  | Validation accuracy | Test accuracy  |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | VGG19 with ImageNet | mate_workspace_vgg19 | COVIDDetector.ipynb | Validation accuracy: 87.3% | Test accuracy: 85.4% |
