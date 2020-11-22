@@ -4,7 +4,31 @@ Datasets used in the project:
   chest_xray: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia  
   COVID-19 Dataset: https://data.mendeley.com/datasets/8h65ywd2jr/3  
 
-How to use:  
-  Open COVIDDetector.ipynb in Google Colab and run cells. The notebook will automatically download the prepared datasets from this repository.   
+Current state of development:
+  Our goal is to detect efficiently non-infected, bacterial infected or COVID-19 infected lungs on chest xrays. We decided to use transfer learning to reach our goal.
   
-If you have difficulties opening the notebook on GitHub ("Sorry, something went wrong.." and similar problems) open it through [this link](https://nbviewer.jupyter.org/github/SonOf1998/COVID-19_detection_in_lungs/blob/main/COVIDDetector.ipynb?flush_cache=true).
+  We are working with 3 labels:
+    * no_findings: no detected infection
+    * covid_19: infected with COVID-19
+    * pneumonia: bacterial infection
+    
+  Datasets used for learning and evaluation:
+    * train
+      * covid_19(370)
+      * no_findings(449)
+      * pneumonia(450)
+    * test
+      * covid_19(37)
+      * no_findings(50)
+      * pneumonia(50)
+
+  So far we used transfer learning on the following models:  
+  | Model  | Branch | File  | Validation accuracy | Test accuracy  |
+  | ------------- | ------------- | ------------- | ------------- | ------------- |
+  | VGG19 with ImageNet | mate_workspace_vgg19 | COVIDDetector.ipynb | Validation accuracy: 87.3% | Test accuracy: 85.4% |
+  | Inception v3 with ImageNet | mate_workspace | COVIDDetector.ipynb | Validation accuracy: 82.2% | Test accuracy: 81.8% |
+  | ResNet152 v2 with ImageNet | nandor_workspace | ResNet152V2_covid.ipynb | Validation accuracy: 75.9% | Test accuracy: 81.0% |
+  
+
+How to use:  
+  Open any notebook in Google Colab and run cells. The notebook will automatically download the prepared datasets from this repository.   
