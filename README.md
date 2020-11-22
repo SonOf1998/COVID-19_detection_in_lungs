@@ -26,6 +26,7 @@ So far we used transfer learning on the following models:
 | Model  | Branch | File  | Validation accuracy | Test accuracy  |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | VGG19 with ImageNet | mate_workspace_vgg19 | COVIDDetector.ipynb | Validation accuracy: 87.3% | Test accuracy: 85.4% |
+| ResNet34 with ImageNet | mate_workspace_resnet34 | COVIDDetector.ipynb | Validation accuracy: 83% | Test accuracy: 83.2% |
 | Inception v3 with ImageNet | mate_workspace | COVIDDetector.ipynb | Validation accuracy: 82.2% | Test accuracy: 81.8% |
 | ResNet152 v2 with ImageNet | nandor_workspace | ResNet152V2_covid.ipynb | Validation accuracy: 75.9% | Test accuracy: 81.0% |
   
