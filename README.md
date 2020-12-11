@@ -1,3 +1,8 @@
+### Team: Brave Metropolitans
+- Máté Levente Kis
+- Nándor Réfi
+- Miklós Bendegúz Szócska
+
 # Datasets used in the project:  
 - X-Ray Image Dataset: https://github.com/muhammedtalo/COVID-19/tree/master/X-Ray%20Image%20DataSet  
 - nabeelsajid917: https://www.kaggle.com/nabeelsajid917/covid-19-x-ray-10000-images  
