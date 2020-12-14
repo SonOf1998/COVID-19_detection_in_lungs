@@ -40,3 +40,6 @@ So far we used transfer learning on the following models:
 
 # How to use:  
 Open any notebook in Google Colab and run cells. The notebook will automatically download the prepared datasets from this repository.   
+
+# Project Video Report
+YouTube link: https://youtu.be/-Irc5UeJnYg
